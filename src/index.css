@@ -1,7 +1,8 @@
 body {
+  /* background-image: url('./components/poppy.jpg'); */
+  /* background-image: 'cover'; */
   margin: 0;
   box-sizing: border-box;
-
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
