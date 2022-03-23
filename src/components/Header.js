@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 export const Header = () => {
   return (
-    <header>
-      <nav>
+    <HeaderWrapper>
+      <Navbar>
         <ul>
           <li>
             <NavLink to='/'>Home</NavLink>
@@ -23,7 +23,27 @@ export const Header = () => {
             <NavLink to='/contact'>Contact</NavLink>
           </li>
         </ul>
-      </nav>
-    </header>
+      </Navbar>
+    </HeaderWrapper>
   );
 };
+
+export const HeaderWrapper = styled.div`
+box-sizing: border-box;
+
+width: 100%;
+padding: 2rem 2rem 2.5rem 2rem;
+display flex;
+// align-items: center;
+// justify-content: space-between;
+position: fixed;
+// top:0;
+
+// z-index: 3;
+`;
+
+export const Navbar = styled.nav`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
